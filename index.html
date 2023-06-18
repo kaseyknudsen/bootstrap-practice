@@ -13,39 +13,58 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container big-container text-center pt-3 m-0">
-      <div class="container little-container text-center">
-        <div class="row">
-          <div class="col-2">
-            <div class="params-container">
-              <div
-                class="d-grid gap-4"
-                role="group"
-                aria-label="Vertical button group"
-              >
-                <button type="button" class="btn btn-outline-secondary">
-                  Button
+    <div class="container little-container text-center mt-5">
+      <div class="row">
+        <div class="col-2" id="params-column">
+          <div class="params-container">
+            <div
+              class="d-grid gap-4"
+              role="group"
+              aria-label="Vertical button group"
+            >
+              <button type="button" class="btn btn-outline-secondary">
+                Button
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Button
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Button
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Button
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Button
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Button
+              </button>
+            </div>
+
+            <div class="col-12 border-end">
+              <div class="dropdown mt-5">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Change Background Color
                 </button>
-                <button type="button" class="btn btn-outline-secondary">
-                  Button
-                </button>
-                <button type="button" class="btn btn-outline-secondary">
-                  Button
-                </button>
-                <button type="button" class="btn btn-outline-secondary">
-                  Button
-                </button>
-                <button type="button" class="btn btn-outline-secondary">
-                  Button
-                </button>
-                <button type="button" class="btn btn-outline-secondary">
-                  Button
-                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Red</a></li>
+                  <li><a class="dropdown-item" href="#">Grey</a></li>
+                  <li><a class="dropdown-item" href="#">White</a></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-9">
-            <span class="border p-5"> box </span>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-9" id="viewer-column">
+          <div class="container">
+            <div class="col"><span class="border p-5"> box </span></div>
           </div>
         </div>
       </div>
